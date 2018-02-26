@@ -94,6 +94,88 @@ section{width:90%; margin: 0 auto;}
 }
 
 
+/* Imessage Indicator */
+.space{
+    position:relative;
+    width: 100%;
+    height:600px;
+}
+
+.typing-indicator {
+  background-color: #E6E7ED;
+  width: auto;
+  border-radius: 50px;
+  padding: 20px;
+  margin-left:1%;
+  display: table;
+  position: relative;
+  -webkit-animation: 2s bulge infinite ease-out;
+          animation: 2s bulge infinite ease-out;
+}
+.typing-indicator:before, .typing-indicator:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: -2px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #E6E7ED;
+}
+.typing-indicator:after {
+  height: 10px;
+  width: 10px;
+  left: -10px;
+  bottom: -10px;
+}
+.typing-indicator span {
+  height: 15px;
+  width: 15px;
+  float: left;
+  margin: 0 1px;
+  background-color: #9E9EA1;
+  display: block;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+.typing-indicator span:nth-of-type(1) {
+  -webkit-animation: 1s blink infinite 0.3333s;
+          animation: 1s blink infinite 0.3333s;
+}
+.typing-indicator span:nth-of-type(2) {
+  -webkit-animation: 1s blink infinite 0.6666s;
+          animation: 1s blink infinite 0.6666s;
+}
+.typing-indicator span:nth-of-type(3) {
+  -webkit-animation: 1s blink infinite 0.9999s;
+          animation: 1s blink infinite 0.9999s;
+}
+
+@-webkit-keyframes blink {
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes bulge {
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+@keyframes bulge {
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+
+/* Imessage Concept */
 @import "https://fonts.googleapis.com/css?family=Open+Sans:400,600,700";
 * {
     -moz-box-sizing: border-box;
@@ -126,11 +208,12 @@ body {
 .message.to {
     background-color: #2095FE;
     color: #fff;
-    margin-left: 80%;
+    float:right;
 }
 .message.from {
     background-color: #E5E4E9;
     color: #363636;
+    margin-right:30%;
 }
 .message.to + .message.to,
 .message.from + .message.from {
@@ -158,6 +241,22 @@ body {
     transform: rotateY(180deg);
 }
 
+.graybox{
+    position:relative;
+    width:100%;
+    height:120%;
+}
+.graybox_long{
+    position:relative;
+    width:100%;
+    height:300%;
+}
+.bluebox{
+    position:relative;
+    width:100%;
+    height:120px;
+}
+
 
 /* Introduction */
 .intro{
@@ -169,7 +268,7 @@ body {
     width:70%;
     overflow:hidden;
     object-fit:contain;
-    margin-left:15px;
+    margin-left:1%;
     border-radius: 20px 20px 20px 20px;
 }
 
@@ -177,6 +276,7 @@ body {
 .story{
     position:relative;
     margin:0 auto;
+    display: none;
 }
 .story .language{
     position:relative;
@@ -187,18 +287,26 @@ body {
     width:70%;
     overflow:hidden;
     object-fit:contain;
-    margin-left:15px;
+    margin-left:1%;
     border-radius: 20px 20px 20px 20px;
 }
 
 /* Our Memory */
+.second_text{
+    display:none;
+}
 .memory_korea{
     position:relative;
     margin:0 auto;
+    display:none;
+}
+.third_text{
+    display: none;
 }
 .memory{
     position:relative;
     margin:0 auto;
+    display:none;
 }
 
 
@@ -569,6 +677,9 @@ button.slick-prev, button.slick-prev:hover {
 }
 
 /* Promise */
+.fourth_text{
+    display: none;
+}
 .promise{
     position:relative;
     margin:auto;
@@ -580,43 +691,65 @@ button.slick-prev, button.slick-prev:hover {
 }
 .promise .together>img{
     width:70%;
-    margin-left:15px;
+    margin-left:1%;
+    margin-top:1%;
     border-radius: 20px 20px 20px 20px;
 }
-.prmise .text_promise{
+
+/* Future */
+.fifth_text{
+    display: none;
+}
+.future{
     position:relative;
-    width:80%;
     margin:auto;
 }
-.prmise .first_promise{
+.future .first_future{
     position:relative;
-    width:80%;
     margin:auto;
 }
-.promise .first_promise>img{
+.future .first_future>img{
     width:70%;
+    margin-top: 1%;
     margin-left:15px;
     border-radius: 20px 20px 20px 20px;
 }
 
-.prmise .second_promise{
+.future .second_future{
     position:relative;
-    width:80%;
     margin:auto;
 }
-.promise .second_promise>img{
+.future .second_future>img{
     width:70%;
+    margin-top: 1%;
     margin-left:15px;
     border-radius: 20px 20px 20px 20px;
 }
 
-.prmise .third_promise{
+.future .third_future{
     position:relative;
-    width:80%;
     margin:auto;
 }
-.promise .third_promise>img{
+.future .third_future>img{
     width:70%;
+    margin-top: 1%;
     margin-left:15px;
     border-radius: 20px 20px 20px 20px;
 }
+
+/* Question */
+.last_text{
+    display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+

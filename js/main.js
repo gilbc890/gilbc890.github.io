@@ -53,8 +53,55 @@ jQuery(document).ready(function($) {
 
 //
 function myFunction(){
-    alert("marry me?")
+    alert("Will You Marry Me?")
 }
     
+
+
+
+$(document).ready(function() {
+  $(window).scroll(function() {    
+    var first_scroll = $(window).scrollTop();
+
+    if (first_scroll >= 1800) {
+      $("#first_indicator").fadeOut();
+        $("#first_space").fadeOut();
+        $(".story").fadeIn();
+        if(first_scroll>1805){
+            $(".second_text").fadeIn();
+        }
+    } else { 
+    }
+  });
+    
+    $(window).scroll(function() {    
+    var second_scroll = $(window).scrollTop();
+
+    if (second_scroll >= 3200) {
+      $("#second_indicator").fadeOut();
+        $("#second_space").fadeOut();
+        $(".memory_korea").fadeIn();
+        if(second_scroll>3205){
+            $(".third_text").fadeIn();
+        }
+    } else {}
+  });
+    
+    $(window).scroll(function() {    
+    var third_scroll = $(window).scrollTop();
+
+    if (third_scroll >= 4000) {
+      $("#third_indicator").fadeOut();
+        $("#third_space").fadeOut();
+        $(".memory").fadeIn();
+        if(third_scroll>4005){
+            $(".fourth_text").fadeIn();
+        }
+    } else {}
+  });
+
+    
+    
+});
 
 

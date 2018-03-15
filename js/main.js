@@ -88,7 +88,7 @@
             }
             
             
-            if (scroll >= 3400) {
+            if (scroll >= 3300) {
                 $("#sixth_indicator").fadeOut();
                 $("#sixth_space").fadeOut();
                 $(".future").fadeIn();

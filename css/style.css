@@ -1,4 +1,6 @@
 @import "https://fonts.googleapis.com/css?family=Open+Sans:400,600,700";
+@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive');
+
 *{
     margin:0;
     padding:0;
@@ -28,7 +30,7 @@ body{
     position:absolute;
     width:100%;
     height:100%;
-    background-image:url("../img/greer/baby.jpg");
+    background-image:url(../img/greer/baby.jpg);
     background-size:cover;
 }
 .greeting .greeting_wrap{
@@ -41,6 +43,7 @@ body{
     text-align:center;
     font-size:3em;
     color:#fff;
+    font-family:cursive;
 }
 
 /* Arrow */
@@ -215,7 +218,7 @@ section{width:90%; margin: 0 auto;}
     padding: 3% 4%;
     position: relative;
     display:inline-block;
-    font-size: 0.7em;
+    font-size: 1em;
     max-width: 70%;
 }
 .message.to {
@@ -291,7 +294,7 @@ section{width:90%; margin: 0 auto;}
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 40%; /* Location of the box */
+    padding-top: 20%; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -391,6 +394,7 @@ section{width:90%; margin: 0 auto;}
   float: left;
   width: 25%;
     height:33%;
+    padding:1%;
 }
 .column>img{
     width:100%;
@@ -521,6 +525,7 @@ section{width:90%; margin: 0 auto;}
   float: left;
   width: 25%;
     height:50%;
+    padding:1%;
 }
 .sec_column>img{
     width:100%;
@@ -563,6 +568,7 @@ section{width:90%; margin: 0 auto;}
   float: left;
   width: 25%;
     height:50%;
+    padding:1%;
 }
 .third_column>img{
     width:100%;

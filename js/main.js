@@ -36,69 +36,69 @@
         });
 
  
-        $(window).scroll(function () {
+ $(window).scroll(function () {
             var scroll = $(window).scrollTop();
             if (scroll >= 700) {
                 $("#first_indicator").fadeOut();
                 $("#first_space").fadeOut();
                 $(".story").fadeIn();
             }
-            if (scroll > 1000) {
+            if (scroll > 900) {
                 $(".second_text").fadeIn();
             }
 
             
-            if (scroll >= 1300) {
+            if (scroll >= 1100) {
                 $("#second_indicator").fadeOut();
                 $("#second_space").fadeOut();
                 $(".memory_korea").fadeIn();
             }
-            if (scroll > 1600) {
+            if (scroll > 1400) {
                 $(".third_text").fadeIn();
             }
 
             
-            if (scroll >= 1900) {
+            if (scroll >= 1700) {
                 $("#third_indicator").fadeOut();
                 $("#third_space").fadeOut();
                 $(".traveling_korea").fadeIn();
             }
-            if (scroll > 2100) {
+            if (scroll > 1900) {
                 $(".fourth_text").fadeIn();
             }
             
             
-            if (scroll >= 2400) {
+            if (scroll >= 2200) {
                 $("#fourth_indicator").fadeOut();
                 $("#fourth_space").fadeOut();
                 $(".memory").fadeIn();
             }
-            if (scroll > 2600) {
+            if (scroll > 2300) {
                 $(".fifth_text").fadeIn();
             }
             
             
-            if (scroll >= 3100) {
+            if (scroll >= 2700) {
                 $("#fifth_indicator").fadeOut();
                 $("#fifth_space").fadeOut();
                 $(".together").fadeIn();
             }
-            if (scroll > 3300) {
+            if (scroll > 2900) {
                 $(".sixth_text").fadeIn();
             }
             
             
-            if (scroll >= 3700) {
+            if (scroll >= 3400) {
                 $("#sixth_indicator").fadeOut();
                 $("#sixth_space").fadeOut();
                 $(".future").fadeIn();
             }
-            if (scroll > 4400) {
+            if (scroll > 4300) {
                 $(".delay").fadeIn();
             }
 
             
-            if (scroll >= 5300) {
+            if (scroll >= 4800) {
                 $("#seventh_indicator").fadeOut();
                 $("#seventh_space").fadeOut();
                 $(".last_text").fadeIn();

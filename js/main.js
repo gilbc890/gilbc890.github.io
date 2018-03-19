@@ -36,8 +36,8 @@
         });
 
  
- $(window).scroll(function () {
-            var scroll = $(window).scrollTop();
+        $(document).scroll(function () {
+            var scroll = $(document).scrollTop();
             if (scroll >= 700) {
                 $("#first_indicator").fadeOut();
                 $("#first_space").fadeOut();

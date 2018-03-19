@@ -58,7 +58,7 @@
             }
 
             
-            if (scroll >= 1700) {
+            if (scroll >= 1800) {
                 $("#third_indicator").fadeOut();
                 $("#third_space").fadeOut();
                 $(".traveling_korea").fadeIn();

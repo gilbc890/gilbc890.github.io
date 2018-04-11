@@ -1,12 +1,14 @@
 @media only screen and (min-width:1025px) and (max-width:10000px){
+  /* first_screen */
   section .first_screen{
-      height:600px;
+      height:620px;
+  }
+  /* About */
+  section .about .about_wrap>h2{
+    margin-top:-20px;
   }
 
-
 }
-
-
 
 /*Tablet Portrait size to standard 960*/
 @media only screen and (min-width:768px) and (max-width:1024px){
@@ -87,11 +89,13 @@
   }
   section .projects .projects_wrap .projects_row{
     overflow:hidden;
-    height:500px;
   }
 
   section .projects .projects_wrap .projects_row .project_box>a>h2{
     font-size: 1.3em;
+  }
+  section .projects .projects_wrap .projects_row .thumbnail{
+    height:340px;
   }
 
   /* Footer */
@@ -197,12 +201,19 @@ section .projects .projects_wrap .projects_row .project_box{
 section .projects .projects_wrap .projects_row .project_box>a>h2{
   font-size: 1.5em;
 }
+section .projects .projects_wrap .projects_row .thumbnail{
+    height:auto;
+}
+section .projects .projects_wrap .projects_row .thumbnail>img{
+    width:100%;
+}
 
 /* Footer */
 footer .footer_wrap .website_skills{
   display: block;
   font-size:1em;
   margin:10%;
+  text-align: center;
 }
 footer .footer_wrap .personal_info{
   display: block;
@@ -210,6 +221,5 @@ footer .footer_wrap .personal_info{
   font-size:1em;
   margin:0  0 10% 0;
 }
-
 
 }
